@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tristan E - Guardian</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0a0e27;
+            color: #e8e8e8;
+            line-height: 1.6;
+        }
+
+        /* Header Navigation */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 40px;
+            background: linear-gradient(to bottom, rgba(10, 14, 39, 0.95), rgba(10, 14, 39, 0.7));
+            z-index: 100;
+            border-bottom: 2px solid #7b3ff2;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            color: #6b5fc7;
+            text-shadow: 0 0 10px rgba(107, 95, 199, 0.5);
+            letter-spacing: 2px;
+        }
+
+        /* Banner Section */
+        .banner {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #1a1a3e 0%, #2d1b4e 50%, #1a1a3e 100%);
+            background-image: url('https://images.unsplash.com/photo-1538481143235-5d630027ce0e?w=1200&h=400&fit=crop');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            margin-top: 70px;
+        }
+
+        .banner::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(123, 63, 242, 0.3) 0%, rgba(255, 140, 0, 0.2) 100%);
+            z-index: 1;
+        }
+
+        .banner-content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+        }
+
+        .banner-content h1 {
+            font-size: 52px;
+            color: #ff8c00;
+            text-shadow: 0 0 20px rgba(255, 140, 0, 0.6);
+            margin-bottom: 10px;
+            letter-spacing: 3px;
+        }
+
+        .banner-content p {
+            font-size: 18px;
+            color: #a8a8ff;
+            text-shadow: 0 0 10px rgba(107, 95, 199, 0.5);
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 60px 40px;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .section h2 {
+            font-size: 32px;
+            color: #ff8c00;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 3px solid #7b3ff2;
+            text-shadow: 0 0 10px rgba(255, 140, 0, 0.4);
+        }
+
+        .list-container {
+            background: linear-gradient(135deg, rgba(107, 95, 199, 0.1) 0%, rgba(123, 63, 242, 0.05) 100%);
+            border-left: 4px solid #7b3ff2;
+            padding: 25px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .list-container ul {
+            list-style: none;
+        }
+
+        .list-container li {
+            padding: 12px 0;
+            padding-left: 25px;
+            position: relative;
+            font-size: 16px;
+        }
+
+        .list-container li::before {
+            content: '◆';
+            position: absolute;
+            left: 0;
+            color: #ff8c00;
+            font-size: 14px;
+            text-shadow: 0 0 5px rgba(255, 140, 0, 0.6);
+        }
+
+        .list-container li:hover {
+            color: #ff8c00;
+            text-shadow: 0 0 10px rgba(255, 140, 0, 0.4);
+            transition: all 0.3s ease;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: rgba(10, 14, 39, 0.8);
+            border-top: 2px solid #7b3ff2;
+            color: #a8a8ff;
+            margin-top: 40px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header {
+                padding: 15px 20px;
+            }
+
+            .name {
+                font-size: 20px;
+            }
+
+            .banner {
+                height: 250px;
+                margin-top: 60px;
+            }
+
+            .banner-content h1 {
+                font-size: 36px;
+            }
+
+            .section h2 {
+                font-size: 24px;
+            }
+
+            main {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="name">Tristan E</div>
+    </header>
+
+    <section class="banner">
+        <div class="banner-content">
+            <h1>GUARDIAN</h1>
+            <p>Explore. Adventure. Legend.</p>
+        </div>
+    </section>
+
+    <main>
+        <!-- Favorite Things Section -->
+        <section class="section">
+            <h2>Favorite Things</h2>
+            <div class="list-container">
+                <ul>
+                    <li>Destiny 2 - Exploring new worlds and conquering raids</li>
+                    <li>Gaming - Immersing myself in epic adventures</li>
+                    <li>Science Fiction - Stories about the unknown universe</li>
+                    <li>Technology - Building and creating cool things</li>
+                    <li>Community - Meeting and connecting with awesome people</li>
+                    <li>The Lore - Understanding deep stories and worldbuilding</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Cool Things About Me Section -->
+        <section class="section">
+            <h2>Cool Things About Me</h2>
+            <div class="list-container">
+                <ul>
+                    <li>Passionate about gaming and always up for a challenge</li>
+                    <li>Quick learner who adapts to new situations easily</li>
+                    <li>Creative problem solver with a unique perspective</li>
+                    <li>Dedicated to continuous self-improvement</li>
+                    <li>Great at working both independently and in teams</li>
+                    <li>Love mentoring others and sharing knowledge</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Tristan E. All rights reserved. Eyes up, Guardian.</p>
+    </footer>
+</body>
+</html>
